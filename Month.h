@@ -16,5 +16,6 @@ char* GetMonthName(Month* pMonth);
 String* GetDaysArray(Month* pMonth);
 int GetDaysArraySize(Month* pMonth);
 void PrintMonth(Month* pMonth);
+void PrintTwoMonth(Month* pMonthLeft, Month* pMonthRight);
 
 #endif // MONTH_H_INCLUDED

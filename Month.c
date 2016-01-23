@@ -1,4 +1,4 @@
-#include <stdio.h>
+//#include <stdio.h>
 #include "Month.h"
 
 // 填写月份英文名
@@ -51,5 +51,24 @@ void PrintMonth(Month* pMonth)
     for (i = 0; i < pMonth->_nArraySize; i++)
     {
       printf("%27s\n", pMonth->_arrayDays[i].buf);
+    }
+}
+
+// 并排打印两个月的日历
+void PrintTwoMonth(Month* pMonthLeft, Month* pMonthRight)
+{
+    int i;
+
+    printf("%27s\t", GetMonthName(pMonthLeft));
+    printf("%27s\n", GetMonthName(pMonthRight));
+
+    printf("----------------------------\t----------------------------\n");
+
+    printf("Sun Mon Tue Wed Thu Fri Sat\tSun Mon Tue Wed Thu Fri Sat\n");
+
+    for (i = 0; i < 6; i++)
+    {
+        printf("%27s\t", pMonthLeft->_arrayDays[i].buf);
+        printf("%27s\n", pMonthRight->_arrayDays[i].buf);
     }
 }
