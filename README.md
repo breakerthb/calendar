@@ -26,6 +26,8 @@ calendar program
 
 # Ref
 
+请参考我在简书的博文：
+
 [21天C语言代码训练营（第六天）](http://www.jianshu.com/p/23a65390d51f)  
 [21天C语言代码训练营（第七天）](http://www.jianshu.com/p/1b3e4c3e642a)  
 [21天C语言代码训练营（第八天）](http://www.jianshu.com/p/c5862efdb40a)  
